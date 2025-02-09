@@ -5,10 +5,13 @@ function toggleMenu() {
 
 
  const el = document.querySelector('.texto')
+ const el2 = document.querySelector('.subtexto')
  const text = `Seja bem vindo a Barbearia ElegAn'S!`
+ const subTexto = "Mais do que um corte, uma experiência de confiança!"
+
  const interval = 30
 
- function showText(el, texto, interval){
+ function showText(el, text, interval){
     const char = text.split("").reverse();
 
     const type = setInterval(() => {
@@ -27,4 +30,23 @@ function toggleMenu() {
     console.log(char)
  }
 
- showText(el,text,interval)
+function orderFunc(){
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Espero isso aqui!")
+            resolve()
+        }, 1000)
+    })
+}
+
+
+async function segunda() {
+    showText(el,text,interval)
+    
+    await orderFunc()
+
+    showText(el2,subTexto,interval)
+}
+
+segunda()
+
