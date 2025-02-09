@@ -23,6 +23,7 @@ body {
     font-weight: bold;
     text-align: left;
     cursor: pointer;
+    margin:10px;
 }
 .navbar .links {
     display: flex;
@@ -47,7 +48,7 @@ body {
     .navbar .links {
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
         text-align: center;
         opacity: 0;
         max-height: 0;
