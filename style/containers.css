@@ -1,0 +1,12 @@
+.container-1{
+    display: flex;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .texto{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
