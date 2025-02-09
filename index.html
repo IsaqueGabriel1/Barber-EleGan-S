@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Elega'S</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="title" onclick="toggleMenu()">Elega'S</div>
+        <div class="links">
+            <a href="#">Marcar horário</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+    
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
